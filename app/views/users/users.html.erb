@@ -1,0 +1,16 @@
+<div>
+  <h3><%= @user.name %></h3>
+  <%= image_tag @user.get_profile_image(20,20) %>
+</div>
+
+<% @users.each do |book| %>
+<div>
+  <%= link_to @users(user.id) do %>
+    <%= image_tag user..get_image %>
+  <% end %>
+  <p>投稿ユーザー画像：<%= image_tag book.user.get_profile_image(20,20) %></p>
+  <p>ショップ名：<%= book.book_name %></p>
+  <p>説明：<%= book.caption %></p>
+  <p>ユーザーネーム：<%= book.user.name %></p>
+</div>
+<% end %>
